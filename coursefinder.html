@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <link type="text/css" rel="stylesheet" href="stylesheetCG.css" />
+    <title>Course Finder</title>
+  </head>
+  <body>
+    
+    <h2 id="header">Course Finder
+    <img class="resize" align="right" src="http://logonoid.com/images/davidson-college-logo.png"/>
+    <img class="resize" alighn="right" src="file:///.file/id=6571367.33850518" />
+    </h2>      
+      
+    &gt; Beta Ver. 0.1 <font color="white">Made by KT</font>
+    <div id="main">
+
+    <form id="form1" name="form1" method="post" action="cleaned_course_gen.cgi">
+      
+      <h3><span style="color: red;">  Please fill in all of the following options.</span></h3>
+      <h4 name="semester">Select the semester: </h4>
+            <input type="radio" value="fall" name="semester" checked />Fall 2015<br />
+      <input type="radio" value="spring" name="semester" />Spring 2016<br />
+
+      <h4 name="requirements">Select one or more Graduation (G) or Distribution (D) requirements:</h4>   
+      <p><em>Note: If two or more requirements are selected, the selector assistant
+      will generate courses that fulfill <b>any</b> of those requirements. For example, 
+      selecting 'Historical Thought (D)' and 'Cultural Diversity (G)' will produce classes
+      that fulfill only the Historical Thought Requirement, only the Cultural Diversity
+      Requirement, and classes that fulfill both the Historical Thought and Cultural 
+      Diversity requirements.</em></p>
+      
+        <input type="checkbox" value="HTRQ" name="req" />Historical Thought (D)<br />
+        <input type="checkbox" value="MQRQ" name="req" />Mathematical and
+        Quantitative Thought (D)<br />
+        <input type="checkbox" value="LTRQ" name="req" />Literary Studies,
+        Creative Writing, and Rhetoric (D)<br />
+        <input type="checkbox" value="NSRQ" name="req" />Natural Science (D)<br />
+        <input type="checkbox" value="PRRQ" name="req" />Philosophical and
+        Religious Perspectives (D)<br />
+        <input type="checkbox" value="SSRQ" name="req" />Social-Scientific
+        Thought (D)<br />
+        <input type="checkbox" value="VPRQ" name="req" />Visual and Performing
+        Arts (D)<br />
+        <input type="checkbox" value="LBRQ" name="req" />Liberal Studies (D) <br />
+        <input type="checkbox" value="CULT" name="req" />Cultural Diversity (G) <br />
+        <input type="checkbox" value="COMP" name="req" />Composition (G)<br />
+        <input type="checkbox" value="NONE" name="req" />No Requirement<br />
+        <input type="checkbox" value="ALL" name="req" />All Courses<br /> 
+    
+        
+      <h4>Select a desired time:</h4>
+      
+      <input type="radio" name="days" value="MWF" checked="checked" />MWF      
+                 <br />
+      <input type="radio" name="days" value="TR" />TR<br />
+      <input type="radio" name="days" value="MWFTR" />MWF and TR<br />
+      <br />
+      Earliest starting time:
+      <select name="early">
+        <option value="0815">8:15am</option>
+        <option value="0830">8:30am</option>
+        <option value="0900">9:00am</option>
+        <option value="1000">10:00am</option>
+        <option value="1100">11:00am</option>
+        <option value="1200">12:00pm</option>
+        <option value="1300">1:00pm</option>
+        <option value="1400">2:00pm</option>
+        <option value="1500">3:00pm</option>
+        <option value="1530">3:30pm</option>
+      </select>
+      <br />
+      Latest starting time:  
+      <select name="late">
+        <option value="0815">8:15am</option>
+        <option value="0830">8:30am</option>
+        <option value="0900">9:00am</option>
+        <option value="1000">10:00am</option>
+        <option value="1100">11:00am</option>
+        <option value="1200">12:00pm</option>
+        <option value="1300">1:00pm</option>
+        <option value="1400">2:00pm</option>
+        <option value="1500">3:00pm</option>
+        <option value="1530">3:30pm</option>
+      </select>
+      <p>(e.g. For 9:30 am classes, set time between 9:00 am and 10:00 am).</p>
+      <p>Note: For 3:30 pm classes, set both times to 3:30 pm.</p>
+      <p>Press 'Submit' to generate courses: <label> <input type="submit" name="submit"
+            id="submit"
+            value="Submit" /> </label></p>
+            
+    </form>
+    <br />
+    <br />
+    </div>
+    <div style="position: relative; text-align: center; bottom: 0; margin-left: auto; margin-right: auto;">
+    <p><b>DISCLAIMER:</b> This project is a tool to provide some assistance to students in the course selection process. All efforts have been made to be as accurate as possible; however, please cross check courses with the <a href="http://www.davidson.edu/offices/registrar/schedules-and-courses">official semester course schedule.</a></p>
+    <p color="purple">The Course Finder was created by Mason Lin, as a part of Dr. Laurie Heyer's Introduction to Bioinformatics class. The Course Finder was developed for the web by Katy Williams, as part of Project PRONTO. Course data graciously provided by the Registrar's office. Davidson College, 2015.</p>
+	<p>Send comments, questions, and suggestions to Laurie Heyer at <a href="mailto:laheyer@davidson.edu" title="email">laheyer@davidson.edu</a>.      <br><br>
+	<p><font color="#ffffff">The answer is 101010.</font></p>
+	</div>
+	<div id="license" style="bottom: 0;">
+      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br>
+      <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">The Course Finder</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Davidson College</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a><br></div>
+      </body>
+</html>

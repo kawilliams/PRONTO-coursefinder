@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="application/xhtml+xml; charset=UTF-8" http-equiv="content-type">
+    <link type="text/css" rel="stylesheet" href="stylesheetCG.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Login to change Semester Course Schedule <img class="resize" align="right" src="http://logonoid.com/images/davidson-college-logo.png"/></h1>
+    <h4 color="red">If you are not affiliated with the registrar's office, 
+      please return to the Course Finder page.</h4>
+      <form name="form1" method="post"action="coursefinder.html">
+      
+        <input style="display: inline;" value="Return" type="submit"> 
+        </form>
+    <form enctype="multipart/form-data" method="post" action="updateCourseSchedule.cgi" name="form2">
+   
+    <p>Select new course schedule (.csv file): <input name="file" type="file"></p>
+    <p>Select which semester to update: </p>
+    <input type="radio" name="Semester" value="fall">Fall
+    <input type="radio" name="Semester" value="spring">Spring
+    <p>Password: <input required="required" name="password" type="password"></p>
+    <label><input value="Continue" name="submit" type="submit"></label>
+    </form>
+    <br />
+
+    <p style="position: absolute; text-align: center; bottom: 0; margin-left: auto; margin-right: 20px; width: 100%; padding: 30px 30px 30px 30px">The Course Finder was created by Mason Lin, as a part of Dr. Laurie Heyer's Introduction to Bioinformatics class. The Course Finder was developed for the web by Katy Williams, as part of Project PRONTO. Course data graciously provided by the Registrar's office. Davidson College, 2015.<br>
+	Send comments, questions, and suggestions to Laurie Heyer at <a href="mailto:laheyer@davidson.edu" title="email">laheyer@davidson.edu</a>.      <br /><br /><br />
+	<div id="license" style="position: absolute; text-align: center; bottom: 0; margin-left: auto; margin-right: auto; width: 100%;">
+      <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0; bottom:3px;" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br>
+      <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/InteractiveResource" property="dc:title" rel="dc:type">The Course Finder</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Davidson College</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a><br></div>
+  </body>
+</html>

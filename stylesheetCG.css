@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+#header {
+  color: black;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+#main {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #ededed;
+    border-radius: 5px;
+    
+}
+
+#license {
+    margin-left: 35px;
+    margin-right: 35px;
+    text-align: center;
+    
+}
+
+table {
+  table-layout:auto;
+  width: 100%;
+  max-width: 2000px;
+  border-collapse: collapse;
+  border: 1px solid black;
+  margin: 50px auto;
+  background: white;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+th { /*header cells*/
+  background-color: #96090f; /*Davidson red */
+  color: white;
+  border: 1px solid black;
+  font-size: 1.1em;
+  padding: 15px;
+}
+
+tr.alt td { /*data cells*/
+  border: 1px solid black;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #000000;
+  background-color: #ededed
+
+}
+
+tr.not td { /*data cells*/
+  border: 1px solid black;
+  height: 30px;
+  padding: 5px;
+  font-size: 1.1em;
+  color: #000000;
+  background-color: white
+
+}
+.resize {
+    width: 20%;
+    max-height: 400px;
+    position: absolute;
+    right: 0px;
+}
+
